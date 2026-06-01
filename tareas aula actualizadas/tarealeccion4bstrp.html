@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Bienvenido internauta!</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0aadb;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #680b50;
+      color: rgb(132, 51, 148);
+      padding: 20px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #6b0551;
+      padding: 0 15px;
+    }
+
+    .intro {
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+      gap: 10px;
+    }
+
+    .contenido-principal {
+      display: grid;
+      grid-template-columns: 1fr; 
+      gap: 20px;
+      padding: 20px;
+    }
+
+    section {
+      background-color: rgb(241, 85, 171);
+      padding: 15px;
+      border: 5px solid #000000;
+      border-radius: 20px;
+    }
+
+    aside {
+      background-color: #a10795;
+      padding: 15px;
+      border: 5px solid #000000;
+      border-radius: 20px;
+    }
+
+    article {
+      background-color: rgb(223, 10, 63);
+      padding: 15px;
+      border: 5px solid #000000;
+      border-radius: 20px;
+    }
+
+    article img {
+      width: 180px;
+      float: left;
+      margin-right: 15px;
+      margin-bottom: 10px;
+    }
+
+    article p {
+      overflow: hidden;
+    }
+
+    article::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      background-color: #0e7aee;
+      color: rgb(102, 0, 80);
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    @media (min-width: 640px) {
+      .intro {
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .contenido-principal {
+        grid-template-columns: 2fr 1fr;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-warning">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">¡Hola aventurero!</a>
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#menuNavbar"
+              aria-controls="menuNavbar"
+              aria-expanded="false"
+              aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">como aguegué css</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">odisea bootstrap</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">¿tienes alguna duda?</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <h1>¿Aprendamos juntos sobre desarrollo web?</h1>
+  </header>
+
+  <div class="intro">
+    <h2>no te preocupes si no sabes nada, lo importante es que tengas ganas de aprender, solo estamos tú y yo</h2>
+  </div>
+
+  <div class="contenido-principal">
+
+    <div>
+      <section>
+        <p>En este curso aprenderemos a crear sitios web, desde lo mas basico, hasta cosas mas avanzadas, como por ejemplo:</p>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Bootstrap y frameworks</li>
+          <li>habilidades lógicas y habilidades blandas</li>
+        </ul>
+      </section>
+
+      <br>
+
+      <article>
+        <h3>¿Quién está detrás de todo esto?</h3>
+        <img src="./ASSETS/img/IMAGEN TAREA html.PNG"
+             alt="lamentablemente no soy un gato antropomorfico, pero para hacerlo más entretenido, pensemos que sí lo soy">
+        <p>HoLa, mi nombre es Bianca, estoy aquí para ayudarte a aprender HTML. No soy una inteligencia artificial, pero haré lo posible por ayudarte. Quiero que sepas que no soy una profesional en el tema, soy una desarrolladora en formación, así como tú. Nos espera un largo camino de aprendizaje, ensayo y error, y ensayo, y ensayo... y un poco más de error y otro poquito de ensayo. (transparento uso de inteligencia artificial como herramienta para ayudarme a aprender y a enseñar)</p>
+      </article>
+    </div>
+
+    <aside>
+      <h4>¿Qué es HTML?</h4>
+      <p>siempre dicen, "html es un lenguaje de marcado" pero nadie te explica qué es un lenguaje de marcado, así que aquí va: un lenguaje de marcado es un sistema de codificación que se utiliza para estructurar y presentar contenido en la web.
+      ¿qué significa en palabras sencillas? que es una forma de darle estructura y formato a los contenidos de una página web. Está compuesto por ETIQUETAS ¿ok? guarda bien esa palabra en tu cabeza. Las etiquetas son como instrucciones que le dicen al navegador cómo mostrar el contenido. Por ejemplo, la etiqueta &lt;p&gt; se utiliza para crear un párrafo, la etiqueta &lt;h1&gt; se utiliza para crear un encabezado de nivel 1, y así sucesivamente hasta el &lt;h6&gt;. HTML es la base de cualquier sitio web.</p>
+    </aside>
+
+  </div>
+
+  <footer>
+    <p>¡Espero que disfrutes el curso y aprendas mucho! te dejo mi contacto en el botón, cuando lleguemos a eso jaja</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

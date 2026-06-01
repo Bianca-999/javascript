@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>calculadora</title>
+    <!-- Enlace oficial a Bootstrap corregido -->
+    <link href="https://jsdelivr.net" rel="stylesheet">
+</head>
+<!-- Un solo body con tus colores seleccionados -->
+<body class="bg-body-secondary d-flex align-items-center justify-content-center vh-100" style="background-color: #955aee !important;">
+
+    <!-- Carcasa de la calculadora con estética de anime -->
+    <div class="card p-4 border border-4 border-dark rounded-4 shadow" style="background-color: #aa5795; max-width: 340px; width: 100%;">
+        
+        <h1 class="text-center h5 mb-3 fw-bold text-dark" style="font-family: 'impact', sans-serif;">✨CALCULADORA✨</h1>
+        
+        <!-- Fila 1 de botones (7, 8, 9, ÷) con el cierre de fila al final -->
+        <div class="row g-2 mb-2">
+            <div class="col-3">
+                <button class="btn fw-bold border border-3 border-dark rounded-3 w-100 py-3 text-dark shadow-sm" style="background-color: #158fb8;">7</button>
+            </div>
+            <div class="col-3">
+                <button class="btn fw-bold border border-3 border-dark rounded-3 w-100 py-3 text-dark shadow-sm" style="background-color: #158fb8;">8</button>
+            </div>
+            <div class="col-3">
+                <button class="btn fw-bold border border-3 border-dark rounded-3 w-100 py-3 text-dark shadow-sm" style="background-color: #158fb8;">9</button>
+            </div>
+            <div class="col-3">
+                <button class="btn fw-bold border border-3 border-dark rounded-3 w-100 py-3 text-dark shadow-sm" style="background-color: #158fb8;">÷</button>
+            </div>  
+        </div>
+
+        <!-- Fila 2 de botones (4, 5, 6, ×) con el cierre de fila al final -->
+        <div class="row g-2 mb-2">
+            <div class="col-3">
+                <button class="btn fw-bold border border-3 border-dark rounded-3 w-100 py-3 text-dark shadow-sm" style="background-color: #a32c99;">4</button>
+            </div>
+            <div class="col-3">
+                <button class="btn fw-bold border border-3 border-dark rounded-3 w-100 py-3 text-dark shadow-sm" style="background-color: #d62ec8;">5</button>
+            </div>
+            <div class="col-3">
+                <button class="btn fw-bold border border-3 border-dark rounded-3 w-100 py-3 text-dark shadow-sm" style="background-color: #d62ec8;">6</button>
+            </div>
+            <div class="col-3">
+                <button class="btn fw-bold border border-3 border-dark rounded-3 w-100 py-3 text-dark shadow-sm" style="background-color: #ad5aa6;">×</button>
+            </div>
+        </div>
+
+        <!-- Fila 3 de botones (1, 2, 3, -) con el cierre de fila al final -->
+        <div class="row g-2 mb-2">    
+            <div class="col-3">
+                <button class="btn fw-bold border border-3 border-dark rounded-3 w-100 py-3 text-dark shadow-sm" style="background-color: #9c7699;">1</button>
+            </div>
+            <div class="col-3">
+                <button class="btn fw-bold border border-3 border-dark rounded-3 w-100 py-3 text-dark shadow-sm" style="background-color: #c25080;">2</button>
+            </div>
+            <div class="col-3">
+                <button class="btn fw-bold border border-3 border-dark rounded-3 w-100 py-3 text-dark shadow-sm" style="background-color: #48e97e;">3</button>
+            </div>
+            <div class="col-3">
+                <button class="btn fw-bold border border-3 border-dark rounded-3 w-100 py-3 text-dark shadow-sm" style="background-color: #c25080;">-</button>
+            </div>
+        </div>
+
+        <!-- Fila 4 de botones (C, 0, =, +) con el cierre de fila al final -->
+        <div class="row g-2 mb-2">
+            <div class="col-3">
+                <button class="btn fw-bold border border-3 border-dark rounded-3 w-100 py-3 text-dark shadow-sm" style="background-color: #48e97e;">C</button>
+            </div>
+            <div class="col-3">
+                <button class="btn fw-bold border border-3 border-dark rounded-3 w-100 py-3 text-dark shadow-sm" style="background-color: #48e97e;">0</button>
+            </div> 
+            <div class="col-3">
+                <button class="btn fw-bold border border-3 border-dark rounded-3 w-100 py-3 text-dark shadow-sm" style="background-color: #c1eb4d;">=</button>
+            </div> 
+            <div class="col-3">
+                <button class="btn fw-bold border border-3 border-dark rounded-3 w-100 py-3 text-dark shadow-sm" style="background-color: #ee933e;">+</button>
+            </div> 
+        </div>
+    
+        <!-- Inputs y elementos anteriores de control ocultos temporalmente abajo -->
+        <div class="mt-3 text-center">
+            <input type="number" placeholder="Num 1" id="numero1" class="form-control mb-1 text-center">
+            <input type="number" placeholder="Num 2" id="numero2" class="form-control mb-2 text-center">
+            <div id="resultado" class="text-white fw-bold"></div>  
+        </div>
+    </div>               
+
+    <script>
+        function sumar() {             
+            let numero_1 = document.getElementById("numero1").value;
+            let numero_2 = document.getElementById("numero2").value;
+            let resultado = Number(numero_1) + Number(numero_2);
+            document.getElementById("resultado").innerHTML = "<p>" + resultado + "</p>";
+        }
+    </script>
+
+</body>
+</html>

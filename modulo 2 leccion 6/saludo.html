@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title>saludos terricolas</title>
+        <script src="./js/jquery-4.0.0.min.js"></script>
+    
+
+    </head>
+
+    <body>
+
+        <h1>Hola planeta tierra, soy bianca </h1>
+        <input type="text" placeholder="¿Cuál es tu nombre?" id="nombre">
+        <button id="btnsaludo">no clickees el botón</button>
+        <span id="mensaje-saludo"></span>
+
+        <script>
+            $("#btnsaludo").click(
+                function() {
+
+                let nombre = $("#nombre").val();
+                $("#mensaje-saludo").text("Hola " + nombre + ", no debiste dar click en el botón, pero ya que lo hiciste, te saludo antes de llevarte con nosotros a nuestro planeta");
+          
+            }
+        ) ;
+        </script>
+
+    </body>
+
+</html>

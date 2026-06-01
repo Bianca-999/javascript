@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculadora de Retención de Boletas de Honorarios</title>  
+        <script src="./js/jquery-4.0.0.min.js"></script>
+
+    </head>
+    <body>
+        <h1>Calculadora de Retención de Boletas de Honorarios</h1>
+        <input type="number" placeholder="Ingrese el monto bruto de la boleta de honorarios" id="monto-bruto">
+        <button id="btnretencion">Calcular Retención</button>
+        <p id="resultado-retencion"></p>
+        <script>
+            $("#btnretencion").click(
+                function() {
+                    let montoBruto = $("#monto-bruto").val();
+                    let retencion = Number(montoBruto) * 15.25 / 100;
+                    $("#resultado-retencion").text("La retención es: " + retencion);
+                }
+            );
+        </script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <title>Mi primera página con JQuery</title>
+
+        <script src="./modulo 2 leccion 5/js/jquery-4.0.0.min.js"></script>
+
+    </head>
+
+    <body>
+        <h1>Suma</h1>
+
+
+        <input type="number" placeholder="Ingrese el primer número" id="numero1">
+
+        <input type="number" placeholder="Ingrese el segundo número" id="numero2">
+
+        <button id="btnsuma">Sumar</button>
+
+    
+
+        <p id="resultado"></p>
+
+        <script>
+
+$("#btnsuma").click(
+    function() {
+
+        let numero_1 = $("#numero1").val();
+        let numero_2 = $("#numero2").val();
+
+        let resultado = Number(numero_1) + Number(numero_2);
+       
+       
+        $("#resultado").text("El resultado es: " + resultado);
+        }
+    )
+
+        </script>
+
+    </body>
+
+</html>

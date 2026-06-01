@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculadora de IVA</title>
+        <script src="./js/jquery-4.0.0.min.js"> </script>
+    </head>
+    <body>
+        <h1>Calculadora de IVA</h1>
+        <input type="number" placeholder="Ingrese el precio del producto" id="precio">
+        <button id="btniva">Calcular IVA</button>
+        <p id="resultado-iva"></p>
+        <script>
+            $("#btniva").click(
+                function() {
+                    let precio = $("#precio").val();
+                    let iva = Number(precio) * 0.19;
+                    $("#resultado-iva").text("El IVA es: " + iva);
+                }
+            );
+        </script>
+    </body>
+</html>
