@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido al portal, estudiante</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="">Área Personal</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="../tareas aula actualizadas/tarealeccion4bstrp.html">Información Académica</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dudas y Avisos</a>
+                  
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        
+        <h1 class="mb-4">Aquí podrás encontrar tu información personal y académica</h1>
+
+        <div class="row g-3">
+            
+            <div class="col-md-4">
+                <input type="text" class="form-control" placeholder="Ingrese su nombre completo" id="nombre">
+            </div>
+            
+            <div class="col-md-4">
+                <input type="text" class="form-control" placeholder="Ingrese su carrera" id="carrera">
+            </div>
+            
+            <div class="col-md-4">
+                <input type="text" class="form-control" placeholder="Ingrese su edad" id="edad">
+            </div>
+
+        </div> <button class="btn btn-primary mt-3" onclick="enviar();">Mostrar Perfil</button>
+
+        <div id="ficha" class="mt-4"></div>
+
+    </div> <script>
+        function enviar() {
+            // Capturamos el texto de los inputs mediante su ID
+            let nombre = document.getElementById("nombre").value;
+            let carrera = document.getElementById("carrera").value;
+            let edad = document.getElementById("edad").value;
+
+            // Inyectamos el HTML dentro del div "ficha" usando Template Literals (comillas invertidas)
+            document.getElementById("ficha").innerHTML = `
+                <h2>Perfil del Estudiante</h2>
+                <p><strong>Nombre:</strong> ${nombre}</p>
+                <p><strong>Carrera:</strong> ${carrera}</p>
+                <p><strong>Edad:</strong> ${edad}</p>
+            `;
+        }
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

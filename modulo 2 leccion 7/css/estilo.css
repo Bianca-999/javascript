@@ -1,0 +1,29 @@
+
+                header {
+                    background-color: #570264;  color: #f0e9f0;
+                    text-align: center; padding: 20px 0;
+                
+                    }
+        
+                .navbar-expand {
+                    background-color: dark;
+                    font-family: 'impact', Tahoma, Geneva, Verdana, sans-serif; color:bisque
+                    background-color: #781488 !important; 
+                    border-bottom: 3px dark solid; 
+                    padding: 5px 0; 
+}
+                body {
+                background-color: #7e037e; 
+                     font-family: 'comic sans MS', Tahoma, Geneva, Verdana, sans-serif; 
+                     color: #030303;
+                     .navbar {
+                background-color: #600a6d !important;
+                border-bottom: 3px solid #030303; 
+                padding: 15px 0; 
+}
+                 div { 
+                    class="container-fluid"
+                border-bottom: 3px solid #000000; 
+                    background-color: #6b136b;
+                    padding: 20px;      
+      
